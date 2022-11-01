@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NoteSJS Download Page</title>
+<style>
+				
+body {
+  font-family: "lato", sans-serif;
+}
+
+button { 
+background-color: #33adff; 
+border-color: #33adff; 
+color:black; }
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h2 {
+  font-size: 26px;
+  margin: 20px 0;
+  text-align: center;
+}
+h2 small {
+  font-size: 0.5em;
+}
+
+.responsive-table li {
+  border-radius: 3px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.responsive-table .table-header {
+  background-color: #33adff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.responsive-table .table-row {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+.responsive-table .col-1 {
+  flex-basis: 10%;
+}
+.responsive-table .col-2 {
+  flex-basis: 40%;
+}
+.responsive-table .col-3 {
+  flex-basis: 25%;
+}
+.responsive-table .col-4 {
+  flex-basis: 25%;
+}
+@media all and (max-width: 767px) {
+  .responsive-table .table-header {
+    display: none;
+  }
+  .responsive-table li {
+    display: block;
+  }
+  .responsive-table .col {
+    flex-basis: 100%;
+  }
+  .responsive-table .col {
+    display: flex;
+    padding: 10px 0;
+  }
+  .responsive-table .col:before {
+    color: #33adff;
+    padding-right: 10px;
+    content: attr(data-label);
+    flex-basis: 50%;
+    text-align: right;
+  }
+}
+			
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Here Are The Notes Files Available To Download</h2>
+  <ul class="responsive-table">
+    <li class="table-header">
+      <div class="col col-1">Sr No.</div>
+      <div class="col col-2">File Name</div>
+      <div class="col col-3">File Size</div>
+      <div class="col col-4">Download</div>
+    </li>
+    
+    
+    <li class="table-row">
+      <div class="col col-1" data-label="Sr No.">1</div>
+      <div class="col col-2" data-label="File Name 1">BEE(Ravish Singh)</div>
+      <div class="col col-3" data-label="File Size">10 MB</div>
+      <div class="col col-4" data-label="Download"><button><a href="/get-files/bee.pdf">Download</a></button>
+      </div>
+    </li>
+ 
+ 
+<li class="table-row">
+      <div class="col col-1" data-label="Sr No.">2</div>
+      <div class="col col-2" data-label="File Name 2">C Programming</div>
+      <div class="col col-3" data-label="File Size">1 MB</div>
+      <div class="col col-4" data-label="Download"><button><a href="/get-files/c programming.pdf">Download</a></button>
+      </div>
+    </li>
+   
+    
+    <li class="table-row">
+      <div class="col col-1" data-label="Sr No.">3</div>
+      <div class="col col-2" data-label="File Name">maths-2 (G.V.Kumbhojkar)</div>
+      <div class="col col-3" data-label="File Size">99 MB</div>
+      <div class="col col-4" data-label="Download"><button><a href="/get-files/mathhs 2.pdf">Download</a></button>
+      </div>
+    </li>
+  
+    
+   <li class="table-row">
+      <div class="col col-1" data-label="Sr No.">4</div>
+      <div class="col col-2" data-label="File Name">Name 4</div>
+      <div class="col col-3" data-label="File Size">40 MB</div>
+      <div class="col col-4" data-label="Download"><button><a href="/get-files/.pdf">Download</a></button>
+      </div>
+    </li>
+  
+    
+     <li class="table-row">
+      <div class="col col-1" data-label="Sr No.">5</div>
+      <div class="col col-2" data-label="File Name">Name 5</div>
+      <div class="col col-3" data-label="File Size">50 MB</div>
+      <div class="col col-4" data-label="Download"><button><a href="/get-files/.pdf">Download</a></button>
+      </div>
+    </li>
+
+    
+  <li class="table-row">
+      <div class="col col-1" data-label="Sr No.">6</div>
+      <div class="col col-2" data-label="File Name">Name 6</div>
+      <div class="col col-3" data-label="File Size">60 MB</div>
+      <div class="col col-4" data-label="Download"><button><a href="/get-files/.pdf">Download</a></button>
+      </div>
+    </li>
+
+    
+   <li class="table-row">
+      <div class="col col-1" data-label="Sr No.">7</div>
+      <div class="col col-2" data-label="File Name">Name 7</div>
+      <div class="col col-3" data-label="File Size">70 MB</div>
+      <div class="col col-4" data-label="Download"><button><a href="/get-files/.pdf">Download</a></button>
+      </div>
+    </li>
+  
+    
+     <li class="table-row">
+      <div class="col col-1" data-label="Sr No.">8</div>
+      <div class="col col-2" data-label="File Name">Name 8</div>
+      <div class="col col-3" data-label="File Size ">80 MB</div>
+      <div class="col col-4" data-label="Download"><button><a href="https://notes-sharing-flask.herokuapp.com/get-files/.pdf">Download</a></button>
+      </div>
+    </li>
+ 
+    
+   <li class="table-row">
+      <div class="col col-1" data-label="Sr No.">9</div>
+      <div class="col col-2" data-label="File Name">Name 9</div>
+      <div class="col col-3" data-label="File Size">90 MB</div>
+      <div class="col col-4" data-label="Download"><button><a href="https://notes-sharing-flask.herokuapp.com/get-files/.pdf">Download</a></button>
+      </div>
+    </li>
+
+    
+   <li class="table-row">
+      <div class="col col-1" data-label="Sr No.">10</div>
+      <div class="col col-2" data-label="File Name">Name 10</div>
+      <div class="col col-3" data-label="File Size">100MB</div>
+      <div class="col col-4" data-label="Download"><button><a href="https://notes-sharing-flask.herokuapp.com/get-files/.pdf">Download</a></button>
+      </div>
+    </li>
+         
+          </ul>
+</div>
+</head>
+</html>
