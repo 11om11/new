@@ -27,7 +27,7 @@ def login():
 
         if request.form['password'] =="password":
             session['user'] = request.form['username']
-            return render_template(('homepage.html'))
+            return redirect(url_for('Homepage'))
     return render_template('Login.html')   
 
 @app.before_request
